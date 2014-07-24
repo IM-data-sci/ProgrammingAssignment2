@@ -21,7 +21,7 @@ cacheSolve <- function(x = matrix(), ...) {
       i <- x$getinv()
       j <- x$get()
       if(!is.null(i)) {
-#            if(j == x) {
+#            if(identical(j,x)) {
                   message("getting cached data")
                   return(i)  
 #            }
